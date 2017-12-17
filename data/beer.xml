@@ -1,0 +1,72 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.example.com/beers"
+       xsi:schemaLocation="http://www.example.com/beers Beers.xsd"-->
+<Beers>
+    <Beer>
+        <name>lvivske</name>
+        <type>DARK</type>
+        <ai>y</ai>
+        <manufacturer>lvivske</manufacturer>
+        <ingredients>
+            <water>1</water>
+            <malt>2</malt>
+            <hop>2</hop>
+            <sugar>2</sugar>
+        </ingredients>
+        <chars>
+            <volumeAlcoholFraction>3.2</volumeAlcoholFraction>
+            <clearness>100%</clearness>
+            <filtered>y</filtered>
+            <nutritionalValue>100kkal</nutritionalValue>
+            <spillMethod>
+                <size>0.5</size>
+                <material>glass</material>
+            </spillMethod>
+        </chars>
+    </Beer>
+    <Beer>
+        <name>golden ale</name>
+        <type>LIGHT</type>
+        <ai>n</ai>
+        <manufacturer>kumpel</manufacturer>
+        <ingredients>
+            <water>3</water>
+            <malt>3</malt>
+            <hop>3</hop>
+            <sugar>3</sugar>
+        </ingredients>
+        <chars>
+            <volumeAlcoholFraction>4.0</volumeAlcoholFraction>
+            <clearness>70%</clearness>
+            <filtered>n</filtered>
+            <nutritionalValue>150kkal</nutritionalValue>
+            <spillMethod>
+                <size>1.0</size>
+                <material>plastic</material>
+            </spillMethod>
+        </chars>
+    </Beer>
+    <Beer>
+        <name>bronze ale</name>
+        <type>LAGER</type>
+        <ai>y</ai>
+        <manufacturer>tsypa</manufacturer>
+        <ingredients>
+            <water>1</water>
+            <malt>1</malt>
+            <hop>4</hop>
+            <sugar>4</sugar>
+        </ingredients>
+        <chars>
+            <volumeAlcoholFraction>5.9</volumeAlcoholFraction>
+            <clearness>30%</clearness>
+            <filtered>n</filtered>
+            <nutritionalValue>150kkal</nutritionalValue>
+            <spillMethod>
+                <size>1.0</size>
+                <material>glass</material>
+            </spillMethod>
+        </chars>
+    </Beer>
+</Beers>

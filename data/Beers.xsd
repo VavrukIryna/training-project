@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <!--targetNamespace="http://www.example.com/beers"-->
+    <xs:element name="Beers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Beer" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string"></xs:element>
+                            <xs:element name="type">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="DARK"></xs:enumeration>
+                                        <xs:enumeration value="LIGHT"></xs:enumeration>
+                                        <xs:enumeration value="LAGER"></xs:enumeration>
+                                        <xs:enumeration value="LIVE"></xs:enumeration>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="ai">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="([y,n]){1}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="manufacturer" type="xs:string"></xs:element>
+                            <xs:element name="ingredients">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="water" type="xs:positiveInteger"></xs:element>
+                                        <xs:element name="malt" type="xs:positiveInteger"></xs:element>
+                                        <xs:element name="hop" type="xs:positiveInteger"></xs:element>
+                                        <xs:element name="sugar" type="xs:positiveInteger"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="chars">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="volumeAlcoholFraction" type="xs:double"></xs:element>
+                                        <xs:element name="clearness" type="xs:string"></xs:element>
+                                        <xs:element name="filtered">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="([y,n]){1}"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="nutritionalValue" type="xs:string"></xs:element>
+                                        <xs:element name="spillMethod">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="size" type="xs:double"></xs:element>
+                                                    <xs:element name="material" type="xs:string"></xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+ 
